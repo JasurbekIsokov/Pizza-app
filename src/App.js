@@ -14,6 +14,7 @@ function App() {
     setCard(productList);
 
     localStorage.setItem("cart", JSON.stringify(productList));
+    alert("Pizza is added", card);
   };
 
   return (
