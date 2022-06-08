@@ -12,6 +12,8 @@ function App() {
     const index = productList.indexOf(item);
     productList[index].quantity++;
     setCard(productList);
+
+    localStorage.setItem("cart", JSON.stringify(productList));
   };
 
   return (
